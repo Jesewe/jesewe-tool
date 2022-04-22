@@ -9,7 +9,6 @@ import pymem, re
 import colorama
 import urllib.request
 from colorama import Fore, Back, Style
-from tkinter import messagebox
 from pystyle import Write, Colors
 
 jpower.window_title('Jesewe Tools 0.9')
@@ -30,7 +29,7 @@ while True:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
         os.system("cls")
-        input(Fore.RED + 'Вы ввели недопустимое значение, попробовать еще раз? ')
+        input(Fore.RED + '[!] Вы ввели недопустимое значение, попробовать еще раз? ')
         os.system("cls")
     else:
         if choose==1:
@@ -41,7 +40,7 @@ while True:
                 choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
             except Exception as e:
                 os.system("cls")
-                input(Fore.RED + 'Вы ввели недопустимое значение, попробовать еще раз? ')
+                input(Fore.RED + '[!] Вы ввели недопустимое значение, попробовать еще раз? ')
                 os.system("cls")
             else:
                 if choose_cheat==1:
@@ -50,8 +49,8 @@ while True:
                         print(Fore.CYAN + 'Загружаю функцию...')
                         r_drawothermodels_2()
                     except Exception:
-                        print(Fore.RED + '\nНе удалось найти процесс csgo.exe')
-                        messagebox.showerror('Ошибка', 'Процесс csgo.exe не найден!')
+                        print(Fore.RED + '\n[!] Не удалось найти процесс csgo.exe')
+                        jpower.msgbox_error('Ошибка', 'Процесс csgo.exe не найден!')
                     else:
                         print(Fore.GREEN + '\nФункцию успешно загружена!')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -61,8 +60,8 @@ while True:
                         print(Fore.CYAN + 'Загружаю функцию...')
                         showmoney()
                     except Exception:
-                        print(Fore.RED + '\nНе удалось найти процесс csgo.exe')
-                        messagebox.showerror('Ошибка', 'Процесс csgo.exe не найден!')
+                        print(Fore.RED + '\n[!] Не удалось найти процесс csgo.exe')
+                        jpower.msgbox_error('Ошибка', 'Процесс csgo.exe не найден!')
                     else:
                         print(Fore.GREEN + '\nФункция успешно загружена!')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -178,5 +177,5 @@ while True:
             input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         else:
             os.system("cls")
-            input(Fore.RED + '\nВы ввели недопустимое значение, попробовать еще раз? ')
+            input(Fore.RED + '\n[!] Вы ввели недопустимое значение, попробовать еще раз? ')
             os.system("cls")
