@@ -9,7 +9,6 @@ import pymem, re
 import colorama
 import urllib.request
 from colorama import Fore, Back, Style
-from pystyle import Write, Colors
 
 jpower.window_title('Jesewe Tools 0.9')
 kernel32 = ctypes.windll.kernel32
@@ -24,7 +23,7 @@ check_version()
 while True:
     os.system("cls")
     print(Fore.YELLOW + 'Jesewe Tools')
-    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о Видеокарте')
+    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] Пробить IP адрес')
     try:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
@@ -159,6 +158,11 @@ while True:
             else:
                 print(Fore.GREEN + '\nИнформация успешно собрана!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+        elif choose==6:
+            os.system("cls")
+            ip = input(Fore.CYAN + 'Пожалуйста, введите целевой IP:')
+            get_info_by_ip(ip=ip)
+            input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==666:
             os.system("cls")
             number_666()
