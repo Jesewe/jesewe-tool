@@ -1,6 +1,9 @@
 import pymem, re
 import GPUtil
 from tabulate import tabulate
+import time
+from pyfiglet import Figlet
+import requests
 
 def r_drawothermodels_2():
     pm = pymem.Pymem('csgo.exe')
@@ -54,3 +57,23 @@ def gpu_info():
             tablefmt='pretty'
         )
     )
+
+def get_info_by_ip(ip='127.0.0.1'):
+    try:
+        response = requests.get(url=f'http://ip-api.com/json/{ip}').json()
+        # print(response)
+        
+        data = {
+            '[IP]': response.get('query'),
+            '[Интернет провайдер]': response.get('isp'),
+            '[Организация]': response.get('org'),
+            '[Страна]': response.get('country'),
+            '[Название региона]': response.get('regionName'),
+            '[Город]': response.get('city'),
+        }
+        
+        for k, v in data.items():
+            print(f'{k} : {v}')
+        
+    except requests.exceptions.ConnectionError:
+        print('[!] Пожалуйста, проверьте подключение к интернету!')
