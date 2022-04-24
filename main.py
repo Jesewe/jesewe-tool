@@ -10,7 +10,7 @@ import colorama
 import urllib.request
 from colorama import Fore, Back, Style
 
-jpower.window_title('Jesewe Tools 0.9')
+jpower.window_title('Jesewe Tools 1.1')
 kernel32 = ctypes.windll.kernel32
 kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
@@ -23,7 +23,7 @@ check_version()
 while True:
     os.system("cls")
     print(Fore.YELLOW + 'Jesewe Tools')
-    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] Пробить IP адрес')
+    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте')
     try:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
@@ -34,8 +34,8 @@ while True:
         if choose==1:
             try:
                 os.system("cls")
-                print(Fore.YELLOW + 'Jesewe Tools')
-                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Чит Osiris\n[4] Чит OneTap V3 CRACK\n[5] Чит Aurora')
+                print(Fore.YELLOW + 'Cheat Loader')
+                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Osiris\n[4] OneTap V3 Crack\n[5] Aurora\n[6] Victoria\n[7] ThrillTrip')
                 choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
             except Exception as e:
                 os.system("cls")
@@ -67,85 +67,113 @@ while True:
                 elif choose_cheat==3:
                     try:
                         os.system("cls")
-                        print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                        print(Fore.CYAN + 'Скачиваю Osiris...')
                         url='https://b0b9a68a-874d-42d8-b11a-ec03c27eb1e5.filesusr.com/archives/68390e_996f980e4c2e4ee4ad0af46823926aef.rar?dn=Osiris.rar'
                         urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Osiris.rar')
                     except Exception:
-                        print(Fore.RED + 'Не удалось скачать файл, повторите попытку позже...')
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + 'Файл успешно скачался!')
-                        print(Fore.YELLOW + '\nОткрываю папку...')
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                 elif choose_cheat==4:
                     try:
                         os.system("cls")
-                        print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                        print(Fore.CYAN + 'Скачиваю OneTap V3 Crack...')
                         url='https://b0b9a68a-874d-42d8-b11a-ec03c27eb1e5.filesusr.com/archives/68390e_d4bac57e501c4b19b921195f17147c62.zip?dn=OneTap%20V3%20by%20Jesewe.zip'
                         urllib.request.urlretrieve(url, 'C:\Jesewe Tools\OneTap V3 by Jesewe.zip')
                     except Exception:
-                        print(Fore.RED + 'Не удалось открыть ссылку, повторите попытку позже...')
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + 'Файл успешно скачался!')
-                        print(Fore.YELLOW + '\nОткрываю папку...')
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                 elif choose_cheat==5:
                     try:
                         os.system("cls")
-                        print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                        print(Fore.CYAN + 'Скачиваю Aurora...')
                         url='https://b0b9a68a-874d-42d8-b11a-ec03c27eb1e5.filesusr.com/archives/68390e_97028a89455c4fd78e483b1f736a83c0.zip?dn=Aurora.zip'
                         urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Aurora.zip')
                     except Exception:
-                        print(Fore.RED + 'Не удалось открыть ссылку, повторите попытку позже...')
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + 'Файл успешно скачался!')
-                        print(Fore.YELLOW + '\nОткрываю папку...')
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==6:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю Victoria...')
+                        url='https://b0b9a68a-874d-42d8-b11a-ec03c27eb1e5.filesusr.com/archives/68390e_20a45e827b5847b59d5c06e7a59b1587.zip?dn=Victoria.zip'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Victoria.zip')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось открыть ссылку, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==7:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю ThrillTrip...')
+                        url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_f8f70a9b82b64253ad478348ab44e30b.zip'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\ThrillTrip.zip')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось открыть ссылку, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==2:
             try:
                 os.system("cls")
-                print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                print(Fore.CYAN + 'Скачиваю VAC-Bypass-Loader...')
                 url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_20dcb76c99954e7ca3f0004cd6a3c74e.zip'
-                urllib.request.urlretrieve(url, 'C:\Jesewe Tools\VAC-Bypass-Loader.exe')
+                urllib.request.urlretrieve(url, 'C:\Jesewe Tools\VAC-Bypass-Loader.zip')
             except Exception:
-                print(Fore.RED + 'Не удалось скачать файл, повторите попытку позже!')
+                print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + 'Файл успешно скачался!')
-                print(Fore.YELLOW + '\nОткрываю папку...')
+                print(Fore.GREEN + '\nФайл успешно скачался!')
+                print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==3:
             try:
                 os.system("cls")
-                print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                print(Fore.CYAN + 'Скачиваю EZInjector...')
                 url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_8b5e7d5dbe12466da0c43d1dba98c0fc.zip'
-                urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Injector.exe')
+                urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Injector.zip')
             except Exception:
-                print(Fore.RED + 'Не удалось скачать файл, повторите попытку позже...')
+                print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + 'Файл успешно скачался!')
-                print(Fore.YELLOW + '\nОткрываю папку...')
+                print(Fore.GREEN + '\nФайл успешно скачался!')
+                print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==4:
             try:
                 os.system("cls")
-                print(Fore.YELLOW + 'Пожалуйста, подождите немного...')
+                print(Fore.CYAN + 'Скачиваю CS:GO-Demos-Manager...')
                 url='https://github.com/akiver/CSGO-Demos-Manager/releases/download/v2.13.15/csgo-demos-manager-2.13.15.exe'
                 urllib.request.urlretrieve(url, 'C:\Jesewe Tools\csgo-demos-manager-2.13.15.exe')
             except Exception:
-                print(Fore.RED + 'Не удалось скачать файл, повторите попытку позже...')
+                print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + 'Ссылка успешно открыта!')
-                print(Fore.YELLOW + '\nОткрываю папку...')
+                print(Fore.GREEN + '\nСсылка успешно открыта!')
+                print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==5:
@@ -153,16 +181,11 @@ while True:
                 os.system("cls")
                 print(gpu_info())
             except Exception:
-                print(Fore.RED + 'Не удалось собрать инфоормацию, повторите попытку позже.')
+                print(Fore.RED + '[!] Не удалось собрать инфоормацию, повторите попытку позже.')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
                 print(Fore.GREEN + '\nИнформация успешно собрана!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==6:
-            os.system("cls")
-            ip = input(Fore.CYAN + 'Пожалуйста, введите целевой IP:')
-            get_info_by_ip(ip=ip)
-            input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==666:
             os.system("cls")
             number_666()
