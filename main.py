@@ -1,6 +1,8 @@
 from util.getUpdate import *
 from util.getSecrets import *
 from util.getFunctions import *
+from util.getTiktokShare import *
+
 import jpower
 import os
 import time
@@ -23,7 +25,7 @@ check_version()
 while True:
     os.system("cls")
     print(Fore.YELLOW + 'Jesewe Tools')
-    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте')
+    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] TikTok Shares')
     try:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
@@ -35,7 +37,7 @@ while True:
             try:
                 os.system("cls")
                 print(Fore.YELLOW + 'Cheat Loader')
-                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Osiris\n[4] OneTap V3 Crack\n[5] Aurora\n[6] Victoria\n[7] ThrillTrip')
+                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Osiris\n[4] OneTap V3 Crack\n[5] Aurora\n[6] Victoria\n[7] ThrillTrip\n[8] Weave')
                 choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
             except Exception as e:
                 os.system("cls")
@@ -113,7 +115,7 @@ while True:
                         url='https://b0b9a68a-874d-42d8-b11a-ec03c27eb1e5.filesusr.com/archives/68390e_20a45e827b5847b59d5c06e7a59b1587.zip?dn=Victoria.zip'
                         urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Victoria.zip')
                     except Exception:
-                        print(Fore.RED + '[!] Не удалось открыть ссылку, повторите попытку позже...')
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
                         print(Fore.GREEN + '\nЗагрузка успешно завершена!')
@@ -127,7 +129,21 @@ while True:
                         url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_f8f70a9b82b64253ad478348ab44e30b.zip'
                         urllib.request.urlretrieve(url, 'C:\Jesewe Tools\ThrillTrip.zip')
                     except Exception:
-                        print(Fore.RED + '[!] Не удалось открыть ссылку, повторите попытку позже...')
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==8:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю Weave...')
+                        url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_8911cec6d608488ebfec7a8a61335b43.zip'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Weave.zip')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
                         print(Fore.GREEN + '\nЗагрузка успешно завершена!')
@@ -185,6 +201,20 @@ while True:
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
                 print(Fore.GREEN + '\nИнформация успешно собрана!')
+                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+        elif choose==6:
+            try:
+                os.system("cls")
+                print(Fore.RED + '[!] Предупреждение, программа может нагружать ПК!')
+                time.sleep(2)
+                print(Fore.RED + '[!] Если программа зависла, можете ее закрыть.')
+                time.sleep(2)
+                main = TikTok()
+                main.start()
+                print(Fore.GREEN + 'Накрутка успешно завершена.')
+                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+            except Exception:
+                print(Fore.RED + '[!] Неизвестная ошибка!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==666:
             os.system("cls")
