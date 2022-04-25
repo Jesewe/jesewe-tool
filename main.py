@@ -12,9 +12,8 @@ import colorama
 import urllib.request
 from colorama import Fore, Back, Style
 
-jpower.window_title('Jesewe Tools 1.1')
-kernel32 = ctypes.windll.kernel32
-kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+init(convert=True)
+jpower.window_title('Jesewe Tools 1.2')
 
 if not os.path.isdir("C:\Jesewe Tools"):
      os.mkdir("C:\Jesewe Tools")
@@ -25,7 +24,7 @@ check_version()
 while True:
     os.system("cls")
     print(Fore.YELLOW + 'Jesewe Tools')
-    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] TikTok Shares')
+    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] TikTok ShareBot')
     try:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
@@ -205,13 +204,12 @@ while True:
         elif choose==6:
             try:
                 os.system("cls")
-                print(Fore.RED + '[!] Предупреждение, программа может нагружать ПК!')
+                print(Fore.RED + '[!] Предупреждение, программа будет нагружать ПК!')
                 time.sleep(2)
-                print(Fore.RED + '[!] Если программа зависла, можете ее закрыть.')
-                time.sleep(2)
-                main = TikTok()
-                main.start()
-                print(Fore.GREEN + 'Накрутка успешно завершена.')
+                print(Fore.RED + '[!] Накрутка работает бесконечно, пока будет работать программа.')
+                time.sleep(4)
+                obj = tiktok()
+                obj.main()
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             except Exception:
                 print(Fore.RED + '[!] Неизвестная ошибка!')
