@@ -15,6 +15,7 @@
 * EZInjector
 * CS:GO Demos Manager
 * Информация о Видеокарте
+* TikTok ShareBot
 
 # Последнее обновление
 24 Апреля 2022 Года
