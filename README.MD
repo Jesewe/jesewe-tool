@@ -1,6 +1,14 @@
-# Jesewe Tools
-Многофункциональная программа с различными фукнциями.
+<br/>
+<div align="center">
+  
+  # Jesewe Tools
+  
+  Это многофункциональная компьютерная программа для компьютера, которая создана на языке программирования Python. Для того, чтобы сообщить об ошибках, нажми <a href="https://github.com/jesewe/jesewe-tool/issues">сюда.</a>
+  
+</div>
 
+
+---------------------------------------------------------------------------------
 # Функции
 * Читы для CS:GO
   - Функция WallHack
@@ -17,9 +25,21 @@
 * Информация о Видеокарте
 * TikTok ShareBot
 
-# Последнее обновление
-24 Апреля 2022 Года
+# Обновление
+25 Апреля 2022 Года
 
-# Информация
-Автор: __Jesewe__
-Версия: __1.1__
+# Информация о программе
+Автор: **__Jesewe__**
+
+Версия: **__1.2__**
+
+# Социальные сети
+[**Discord Server**](https://discord.gg/AzFp7ab6Ye)
+
+[**VK**](https://vk.com/mr_golden_bro)
+
+[**Twitter**](https://twitter.com/jesewe_offical)
+
+[**Steam**](https://steamcommunity.com/id/jesewe_offical/)
+
+[**Telegram**](https://t.me/jesewe_offical)
