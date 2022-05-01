@@ -10,7 +10,7 @@ import urllib.request
 from colorama import Fore, Style, Back, init
 init(convert=True)
 
-jpower.window_title('Jesewe Tools 1.3')
+jpower.window_title('Jesewe Tools 1.4')
 if not os.path.isdir("C:\Jesewe Tools"):
      os.mkdir("C:\Jesewe Tools")
 
@@ -48,7 +48,7 @@ while True:
                         print(Fore.RED + '\n[!] Не удалось найти процесс csgo.exe')
                         jpower.msgbox_error('Ошибка', 'Процесс csgo.exe не найден!')
                     else:
-                        print(Fore.GREEN + '\nФункцию успешно загружена!')
+                        print(Fore.GREEN + 'Функцию успешно загружена!')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                 elif choose_cheat==2:
                     try:
@@ -59,7 +59,7 @@ while True:
                         print(Fore.RED + '\n[!] Не удалось найти процесс csgo.exe')
                         jpower.msgbox_error('Ошибка', 'Процесс csgo.exe не найден!')
                     else:
-                        print(Fore.GREEN + '\nФункция успешно загружена!')
+                        print(Fore.GREEN + 'Функция успешно загружена!')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                 elif choose_cheat==3:
                     try:
@@ -71,7 +71,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -85,7 +85,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -99,7 +99,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -113,7 +113,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -127,7 +127,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -141,7 +141,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -155,7 +155,7 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -163,7 +163,7 @@ while True:
             try:
                 os.system("cls")
                 print(Fore.YELLOW + 'Minecraft - Cheat Loader')
-                print(Fore.CYAN + '\n[1] Aristois Client\n[2] Impact Client')
+                print(Fore.CYAN + '\n[1] Aristois Client\n[2] Impact Client\n[3] Xray Ultimate\n[4] Flux B13 1.8.8\n[5] LiquidBounce Client')
                 choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
             except Exception as e:
                 os.system("cls")
@@ -174,13 +174,13 @@ while True:
                     try:
                         os.system("cls")
                         print(Fore.CYAN + 'Скачиваю Aristois Client...')
-                        url='https://aristois.net/ui-installer/free'
-                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Aristois.jar')
+                        url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_d81cfa9b47c247e2a03dc59f55bad907.jar'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Aristois-Free.jar')
                     except Exception:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -194,7 +194,45 @@ while True:
                         print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
                     else:
-                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==3:
+                    try:
+                        os.system("cls")
+                        jpower.url_open('https://minecraft-inside.ru/resource-packs/32958-xray-ultimate.html')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось открыть приложение, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + "Приложение успешно открыто!")
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==4:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю Flux B13...')
+                        url='https://minecraftcheats.ru/wp-content/uploads/2017/11/Flux-b13.zip'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Flux-b13.jar')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==5:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю LiquidBounce Launcher...')
+                        url='https://downloader.disk.yandex.ru/disk/69458fb5bb2d32cce28a7874bab6ed3182e6f701bcbb85dd0beddfd6873ac335/626e5d57/7vnf--D75glR8PqBr9gpBSHbJ8PMIyXtBrAq6uEnwj01Kksy1iSbk61GqeHzQzHzri7ArMaquHdpPgRxFbnHNQ%3D%3D?uid=0&filename=LiquidLauncher-1.1.3%20Setup.exe&disposition=attachment&hash=yl5ZSONh5nvZRbQZlS7zhf97xWT3%2BGqj9W5rMd76zR4PBzf6T5kxqorURR%2BHB2GTq/J6bpmRyOJonT3VoXnDag%3D%3D&limit=0&content_type=application%2Fx-dosexec&owner_uid=895810910&fsize=56280198&hid=c5f710eb0f03e66c3881600a59635a26&media_type=executable&tknv=v2'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\LiquidLauncher-1.1.3 Setup.exe')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + 'Загрузка успешно завершена!')
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -208,7 +246,7 @@ while True:
                 print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + '\nФайл успешно скачался!')
+                print(Fore.GREEN + 'Загрузка успешно завершена!')
                 print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -222,7 +260,7 @@ while True:
                 print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + '\nФайл успешно скачался!')
+                print(Fore.GREEN + 'Загрузка успешно завершена!')
                 print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
