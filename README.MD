@@ -25,7 +25,6 @@
    - Impact Client
 * Steam Vac Bypass Loader
 * EZInjector
-* CS:GO Demos Manager
 * Информация о Видеокарте
 
 # Обновление
