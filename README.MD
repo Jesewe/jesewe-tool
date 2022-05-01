@@ -23,17 +23,20 @@
 * Читы для Minecraft
   - Aristois Client
    - Impact Client
+   - Xray Ultimate
+   - Flux B13 1.8.8
+   - LiquidBounce Client
 * Steam Vac Bypass Loader
 * EZInjector
 * Информация о Видеокарте
 
 # Обновление
-25 Апреля 2022 Года
+1 Мая 2022 Года
 
 # Информация о программе
 Автор: **__Jesewe__**
 
-Версия: **__1.3__**
+Версия: **__1.4__**
 
 # Социальные сети
 [**Discord Server**](https://discord.gg/AzFp7ab6Ye)
