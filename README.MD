@@ -19,11 +19,14 @@
    - Victoria
    - ThrillTrip
    - Weave
+   - DarkLight
+* Читы для Minecraft
+  - Aristois Client
+   - Impact Client
 * Steam Vac Bypass Loader
 * EZInjector
 * CS:GO Demos Manager
 * Информация о Видеокарте
-* TikTok ShareBot
 
 # Обновление
 25 Апреля 2022 Года
