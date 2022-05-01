@@ -1,8 +1,5 @@
 from util.getUpdate import *
-from util.getSecrets import *
 from util.getFunctions import *
-from util.getTiktokShare import *
-
 import jpower
 import os
 import time
@@ -10,11 +7,10 @@ import ctypes
 import pymem, re
 import colorama
 import urllib.request
-from colorama import Fore, Back, Style
-
+from colorama import Fore, Style, Back, init
 init(convert=True)
-jpower.window_title('Jesewe Tools 1.2')
 
+jpower.window_title('Jesewe Tools 1.4')
 if not os.path.isdir("C:\Jesewe Tools"):
      os.mkdir("C:\Jesewe Tools")
 
@@ -24,7 +20,7 @@ check_version()
 while True:
     os.system("cls")
     print(Fore.YELLOW + 'Jesewe Tools')
-    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Steam VAC Bypass Loader\n[3] EZInjector Reborn\n[4] CS:GO Demos Manager\n[5] Информация о видеокарте\n[6] TikTok ShareBot')
+    print(Fore.CYAN + '\n[1] Читы для CS:GO\n[2] Читы для Minecraft\n[3] Steam VAC Bypass Loader\n[4] EZInjector Reborn\n[5] Информация о видеокарте')
     try:
         choose=int(input(Fore.YELLOW + '\nВыберите число > '))
     except Exception as e:
@@ -35,8 +31,8 @@ while True:
         if choose==1:
             try:
                 os.system("cls")
-                print(Fore.YELLOW + 'Cheat Loader')
-                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Osiris\n[4] OneTap V3 Crack\n[5] Aurora\n[6] Victoria\n[7] ThrillTrip\n[8] Weave')
+                print(Fore.YELLOW + 'CS:GO - Cheat Loader')
+                print(Fore.CYAN + '\n[1] Функция WallHack\n[2] Функция ShowMoney\n[3] Osiris\n[4] OneTap V3 Crack\n[5] Aurora\n[6] Victoria\n[7] ThrillTrip\n[8] Weave\n[9] DarkLight')
                 choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
             except Exception as e:
                 os.system("cls")
@@ -149,7 +145,60 @@ while True:
                         print(Fore.CYAN + '\nОткрываю папку с файлом...')
                         os.system('start "" "C:\Jesewe Tools"')
                         input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==9:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю DarkLight...')
+                        url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_5ca7b3fd937d49a7b582e3779c076427.zip'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\DarkLight.zip')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         elif choose==2:
+            try:
+                os.system("cls")
+                print(Fore.YELLOW + 'Minecraft - Cheat Loader')
+                print(Fore.CYAN + '\n[1] Aristois Client\n[2] Impact Client')
+                choose_cheat=int(input(Fore.YELLOW + '\nВыберите число > '))
+            except Exception as e:
+                os.system("cls")
+                input(Fore.RED + '[!] Вы ввели недопустимое значение, попробовать еще раз? ')
+                os.system("cls")
+            else:
+                if choose_cheat==1:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю Aristois Client...')
+                        url='https://aristois.net/ui-installer/free'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Aristois.jar')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                elif choose_cheat==2:
+                    try:
+                        os.system("cls")
+                        print(Fore.CYAN + 'Скачиваю Impact Client...')
+                        url='https://impactclient.net/ImpactInstaller.jar'
+                        urllib.request.urlretrieve(url, 'C:\Jesewe Tools\ImpactInstaller-0.9.5.jar')
+                    except Exception:
+                        print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+                    else:
+                        print(Fore.GREEN + '\nЗагрузка успешно завершена!')
+                        print(Fore.CYAN + '\nОткрываю папку с файлом...')
+                        os.system('start "" "C:\Jesewe Tools"')
+                        input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
+        elif choose==3:
             try:
                 os.system("cls")
                 print(Fore.CYAN + 'Скачиваю VAC-Bypass-Loader...')
@@ -163,10 +212,10 @@ while True:
                 print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==3:
+        elif choose==4:
             try:
                 os.system("cls")
-                print(Fore.CYAN + 'Скачиваю EZInjector...')
+                print(Fore.CYAN + 'Скачиваю EZInjector Reborn...')
                 url='https://68390ef0-2b5a-4998-8629-585776492d8f.usrfiles.com/archives/68390e_8b5e7d5dbe12466da0c43d1dba98c0fc.zip'
                 urllib.request.urlretrieve(url, 'C:\Jesewe Tools\Injector.zip')
             except Exception:
@@ -174,20 +223,6 @@ while True:
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
                 print(Fore.GREEN + '\nФайл успешно скачался!')
-                print(Fore.CYAN + '\nОткрываю папку с файлом...')
-                os.system('start "" "C:\Jesewe Tools"')
-                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==4:
-            try:
-                os.system("cls")
-                print(Fore.CYAN + 'Скачиваю CS:GO-Demos-Manager...')
-                url='https://github.com/akiver/CSGO-Demos-Manager/releases/download/v2.13.15/csgo-demos-manager-2.13.15.exe'
-                urllib.request.urlretrieve(url, 'C:\Jesewe Tools\csgo-demos-manager-2.13.15.exe')
-            except Exception:
-                print(Fore.RED + '[!] Не удалось скачать файл, повторите попытку позже...')
-                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-            else:
-                print(Fore.GREEN + '\nСсылка успешно открыта!')
                 print(Fore.CYAN + '\nОткрываю папку с файлом...')
                 os.system('start "" "C:\Jesewe Tools"')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
@@ -199,37 +234,7 @@ while True:
                 print(Fore.RED + '[!] Не удалось собрать инфоормацию, повторите попытку позже.')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
             else:
-                print(Fore.GREEN + '\nИнформация успешно собрана!')
                 input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==6:
-            try:
-                os.system("cls")
-                print(Fore.RED + '[!] Предупреждение, программа будет нагружать ПК!')
-                time.sleep(2)
-                print(Fore.RED + '[!] Накрутка работает бесконечно, пока будет работать программа.')
-                time.sleep(4)
-                obj = tiktok()
-                obj.main()
-                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-            except Exception:
-                print(Fore.RED + '[!] Неизвестная ошибка!')
-                input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==666:
-            os.system("cls")
-            number_666()
-            input(Fore.YELLOW + '\n\nДля продолжения нажмите Enter > ')
-        elif choose==404:
-            os.system("cls")
-            number_404()
-            input(Fore.YELLOW + '\n\nДля продолжения нажмите Enter > ')
-        elif choose==999:
-            os.system("cls")
-            number_999()
-            input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
-        elif choose==1007:
-            os.system("cls")
-            dead_inside()
-            input(Fore.YELLOW + '\nДля продолжения нажмите Enter > ')
         else:
             os.system("cls")
             input(Fore.RED + '\n[!] Вы ввели недопустимое значение, попробовать еще раз? ')
