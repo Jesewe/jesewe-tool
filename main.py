@@ -10,7 +10,7 @@ import urllib.request
 from colorama import Fore, Style, Back, init
 init(convert=True)
 
-jpower.window_title('Jesewe Tools 1.4')
+jpower.window_title('Jesewe Tools 1.3')
 if not os.path.isdir("C:\Jesewe Tools"):
      os.mkdir("C:\Jesewe Tools")
 
